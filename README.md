@@ -1,1 +1,28 @@
 # STEM-Away-Internship
+
+## Objective:
+
+Build a recommender system using sentence-transfomers
+
+## Details
+
+This code is adapted from the sentence-transformers documentation:
+
+
+```
+https://github.com/UKPLab/sentence-transformers/blob/master/examples/applications/retrieve_rerank/retrieve_rerank_simple_wikipedia.ipynb
+ 
+```
+
+To use this code please call main.py and when prompted insert your desired query question:
+
+```
+$ python3 main.py
+
+```
+
+```
+example: "What is the step by step guide to invest in share market?"
+
+```
+
