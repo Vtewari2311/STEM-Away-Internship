@@ -1,3 +1,5 @@
+import seaborn as sns
+import numpy as np
 from collections import defaultdict
 
 
@@ -35,3 +37,21 @@ def evaluate(list_hits, list_question2, labels):
   specificity = TN/(TN+FP)
   FPR = 1-specificity
   return accuracy, sensitivity, specificity, FPR, TP,TN,FP,FN
+
+
+
+def display_confusion_mat(TP, TN, FP, FN):
+  cf = np.array([
+      [TN, FP],
+      [FN, TP]
+  ])
+  ax = sns.heatmap(cf, annot=True, cmap='Blues')
+
+  ax.set_title('Confusion Matrix \n\n');
+  ax.set_xlabel('\nPredicted Values')
+  ax.set_ylabel('Actual Values ');
+  ax.xaxis.set_ticklabels(['False','True'])
+  ax.yaxis.set_ticklabels(['False','True'])
+
+  ## Display the visualization of the Confusion Matrix.
+  plt.show()
