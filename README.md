@@ -56,3 +56,5 @@ pip install -U sentence-transformers
 conda install -c conda-forge sentence-transformers
 
 ```
+### Web Scraper Application
+[Link to Slides for Web Scraper Code Explanation](https://docs.google.com/presentation/d/1mhVecQw_L2BDtFXnPgUaEQN_h4llbVay2AWeLFFx00Y/edit?usp=sharing)
